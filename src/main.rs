@@ -52,7 +52,7 @@ impl framework::Example for GameLife {
         device: &wgpu::Device,
         _queue: &wgpu::Queue,
     ) -> Self {
-        // Create texture
+        // Create texture - s
         // Init life, setting the initial state
         // Init renderer
 
