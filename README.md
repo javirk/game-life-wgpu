@@ -7,4 +7,4 @@ I wanted to learn how to do GPU programming in Rust, so I developed this small t
 I used https://github.com/blakej11/wgpu-life as a reference. One week ago I had no idea what a Compute Shader was.
 
 ### Example
-![gol](https://github.com/javirk/game-life-wgpu/blob/rgb/images_readme/gol.png)
+![gol](https://github.com/javirk/game-life-wgpu/blob/master/images_readme/gol.png)
