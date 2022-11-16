@@ -14,11 +14,11 @@ impl Texture {
             size: wgpu::Extent3d {
                 width: params[1] as u32,
                 height: params[0] as u32,
-                depth_or_array_layers: 1,
+                depth_or_array_layers: 3,
             },
             mip_level_count: 1,
             sample_count: 1,
-            dimension: wgpu::TextureDimension::D2,
+            dimension: wgpu::TextureDimension::D3,
             format,
             usage: wgpu::TextureUsages::TEXTURE_BINDING 
             | wgpu::TextureUsages::COPY_DST 
@@ -43,7 +43,7 @@ impl Texture {
         wgpu::BindingType::StorageTexture {
             access,
             format: self.format,
-            view_dimension: wgpu::TextureViewDimension::D2,
+            view_dimension: wgpu::TextureViewDimension::D3,
         }
     }
 }

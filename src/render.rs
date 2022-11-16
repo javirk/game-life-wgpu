@@ -121,7 +121,7 @@ impl Renderer {
                 },
                 wgpu::VertexAttribute {
                     // Texture
-                    format: wgpu::VertexFormat::Float32x2,
+                    format: wgpu::VertexFormat::Float32x3,
                     offset: std::mem::size_of::<[f32; 4]>() as wgpu::BufferAddress,
                     shader_location: 1,
                 },

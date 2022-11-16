@@ -32,7 +32,7 @@ impl Life {
         });
 
         // Parameters
-        let dimensions = params[0] * params[1];
+        let dimensions = params[0] * params[1] * 3;  // 3 for RGB
         let cell_buff_size = dimensions * mem::size_of::<f32>();
 
         // Bind group layout
@@ -72,7 +72,7 @@ impl Life {
                     wgpu::BindGroupLayoutEntry {
                         binding: 3,
                         visibility: wgpu::ShaderStages::COMPUTE,
-                        ty: texture.binding_type(wgpu::StorageTextureAccess::WriteOnly),
+                        ty: texture.binding_type(wgpu::StorageTextureAccess::ReadWrite),
                         count: None,
                     },
                 ],
